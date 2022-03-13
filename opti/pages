@@ -1,0 +1,96 @@
+<p align="center">
+  <a href="https://example.com/">
+    <img src="https://dev.azure.com/tecnologiaunica/eeb30c7b-f486-43c5-a03c-31da416dae86/_apis/git/repositories/14f1cbb2-da60-4716-ae72-448e3ec0dc35/items?path=/src/assets/images/logo.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=development&resolveLfs=true&%24format=octetStream&api-version=5.0" alt="Logo"  height=72>
+</a>
+  <h3 align="center">Opti Marketing | Pasta /pages</h3>
+</p> 
+
+
+### File Tree
+
+```bash
+├─AlterarSenha/
+├─Artigos/
+├─CancelarConta/
+├─Dashboard/
+├─DetalheArtigo/
+├─ListagemColaboradores/
+├─ListagemEmpresas/
+├─Login/
+├─NovaSenha/
+├─Pagamento/
+├─PalavrasChave/
+├─Perfil/
+├─TermosUso/
+└─AdminHomePage.tsx
+``` 
+### Como criar uma nova página:
+ 
+ 1 - Crie os arquivos na pasta pages; 
+ 2 - Na pasta routes importe a pagina  
+ 
+    import  ListagemEmpresas  from  "pages/ListagemEmpresas";
+
+ 3 - No arquivo referente a quem poderá vê-la.
+
+    <Route  exact  path="/empresas"  component={ListagemEmpresas}  key="a-4"  />,
+
+### Descrição de cada página
+(admin tem acesso a todas as páginas de empresa e empresa tem acesso as paginas de colaborador)
+
+#### Página que só o usuário Admin 
+
+  **/** 
+Descrição: Ainda não implementada
+
+  **/empresas** 
+Descrição: gridview com a listagem de todos os usuários tipo empresa. Deve permitir ver, adicionar, editar e remover. 
+
+
+  **/cancelar-conta** 
+Descrição: a checar informações. 
+
+
+  **/perfil** 
+Descrição: a checar informações. 
+
+#### Página com acessos do usuário Empresa:
+
+ **/** 
+Descrição: Se for usuário empresa ou colaborador a página principal sempre será uma dashboard com detalhes estatisticos de um dos projetos. 
+
+**/perfil** 
+Descrição: Edição do perfil da empresa. 
+
+ **/colaboradores** 
+Descrição: gridview com a listagem de todos os colaboradores da empresa. Deve permitir ver, adicionar, editar e remover. 
+
+
+#### Página com acessos do usuário Colaborador:
+
+  **/** 
+Descrição: Dashboard com detalhes estatísticos de um dos projetos. 
+
+**/artigos**
+Descrição: Página com uma gridview listando todos os artigos. 
+
+**/artigos/:id**
+Descrição: Página com todas as informações de um artigo. 
+
+**/palavras-chave**
+Descrição: Página com gridview listando todas as palavras-chave do projeto. 
+
+
+#### Página com acessos do usuário Deslogados:
+
+  **/** e **/Login** 
+Descrição: Tela de login. 
+
+**/alterarSenha** e **/novaSenha**
+Descrição: Tela de alteração de senha e nova senha. 
+
+**/cadastro**
+Descrição: Tela de fluxo de cadastro de nova empresa.
+
+**/termos-de-uso**
+Descrição: Termos de uso da plataforma 
