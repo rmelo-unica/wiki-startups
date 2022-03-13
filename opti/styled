@@ -1,0 +1,37 @@
+
+<p align="center">
+  <a href="https://example.com/">
+    <img src="https://dev.azure.com/tecnologiaunica/eeb30c7b-f486-43c5-a03c-31da416dae86/_apis/git/repositories/14f1cbb2-da60-4716-ae72-448e3ec0dc35/items?path=/src/assets/images/logo.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=development&resolveLfs=true&%24format=octetStream&api-version=5.0" alt="Logo"  height=72>
+  </a>
+  <h3 align="center">Opti Marketing | Pasta /styles</h3>
+   </p> 
+   
+### File Tree
+
+```bash
+styles/
+├─_tema.scss
+├─global-classes.scss
+├─index.scss
+├─reset-datepicker.scss
+├─reset.scss
+└─theme.ts
+```
+
+ `_tema.scss`
+Arquivo saas com configurações de tamanho, font-size, apacing, cores... do projeto. Legal sempre usarmos para mandar as cores e medidas padronizadas.
+
+ `global-classes.scss`
+Arquivo saas onde adicionamos classes globais.
+
+ `index.scss`
+Arquivo saas com resets css
+
+ `reset-datepicker.scss`
+Arquivo saas com resets css da lib datepicker
+
+ `reset.scss`
+Arquivo saas com reset css
+
+ `theme.ts`
+Arquivo com Custom Theme do Material UI 
